@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="PinkCar5 — وجهتك لعالم السيارات. اكتشف سيارات مميزة وانطلق بثقة.">
+  <title>PinkCar5 | عالم السيارات</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --pink: #ff4f9a;
+      --pink-light: #ff8cbd;
+      --bg: #101114;
+      --panel: #191a20;
+      --muted: #b7b7c1;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+      color: #fff;
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, calc(100% - 40px)); margin-inline: auto; }
+    header { border-bottom: 1px solid #ffffff14; background: #101114ed; }
+    nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-size: 1.5rem; font-weight: 900; letter-spacing: .3px; }
+    .brand span { color: var(--pink); }
+    .nav-links { display: flex; gap: 24px; color: var(--muted); font-size: .95rem; }
+    .nav-links a:hover { color: #fff; }
+    .button { display: inline-flex; align-items: center; justify-content: center; padding: 11px 20px; border-radius: 999px; background: var(--pink); color: #160812; font-weight: 800; transition: .2s ease; }
+    .button:hover { background: var(--pink-light); transform: translateY(-2px); }
+    .hero { padding: 90px 0 78px; background: radial-gradient(ellipse at 75% 30%, #ff4f9a26, transparent 38%), linear-gradient(135deg, #171820, var(--bg) 70%); }
+    .hero-content { max-width: 720px; }
+    .eyebrow { color: var(--pink-light); font-weight: 800; }
+    h1 { margin: 12px 0 16px; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.12; }
+    h1 span { color: var(--pink); }
+    .hero p { max-width: 600px; color: var(--muted); font-size: 1.12rem; margin: 0 0 28px; }
+    .section { padding: 68px 0; }
+    .section-heading { margin-bottom: 28px; }
+    .section-heading h2 { margin: 0 0 6px; font-size: 2rem; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { padding: 24px; border: 1px solid #ffffff12; border-radius: 18px; background: var(--panel); }
+    .icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: #ff4f9a1c; font-size: 1.5rem; }
+    .card h3 { margin: 16px 0 6px; }
+    .card p { margin: 0; color: var(--muted); }
+    .contact { padding: 34px; border-radius: 20px; background: linear-gradient(120deg, #ff4f9a24, #191a20 65%); border: 1px solid #ff4f9a35; }
+    .contact h2 { margin-top: 0; }
+    .contact p { color: var(--muted); }
+    footer { padding: 24px 0; border-top: 1px solid #ffffff14; color: var(--muted); font-size: .9rem; }
+    footer .container { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 700px) {
+      .nav-links { display: none; }
+      .hero { padding: 68px 0 58px; }
+      .cards { grid-template-columns: 1fr; }
+      .section { padding: 52px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#home">Pink<span>Car</span>5</a>
+      <div class="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن الموقع</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+      <a class="button" href="#about">اكتشف المزيد</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">أهلاً بك في PinkCar5</div>
+        <h1>عالم السيارات<br><span>بأسلوب مختلف</span></h1>
+        <p>وجهتك للتعرّف على السيارات واكتشاف كل ما يجعل رحلتك القادمة أكثر متعة. انطلق معنا واكتشف الطريق بطريقتك.</p>
+        <a class="button" href="#about">ابدأ الاستكشاف ←</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>لماذا PinkCar5؟</h2>
+          <p>مساحة بسيطة لكل محبي السيارات والقيادة.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🚘</div>
+            <h3>اكتشف السيارات</h3>
+            <p>تعرّف على فئات السيارات ومميزاتها، واختر ما يناسب ذوقك واحتياجاتك.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">✨</div>
+            <h3>تجربة مميزة</h3>
+            <p>تصميم واضح وسهل الاستخدام على الهاتف والكمبيوتر، لتصل إلى ما تبحث عنه بسرعة.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🛣️</div>
+            <h3>انطلق بثقة</h3>
+            <p>تابع الموقع لاكتشاف محتوى جديد وأفكار تساعدك في رحلتك مع عالم السيارات.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2>رحلتك تبدأ هنا</h2>
+          <p>هذا موقع PinkCar5 — أضف معلومات التواصل وروابطك الخاصة هنا عندما تكون جاهزاً.</p>
+          <a class="button" href="https://github.com/herobreath-99/PinkCar5">زر مستودع المشروع</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> PinkCar5. جميع الحقوق محفوظة.</span>
+      <span>صُنع بشغف لعشاق السيارات</span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
